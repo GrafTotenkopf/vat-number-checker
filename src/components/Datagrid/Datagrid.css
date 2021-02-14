@@ -1,0 +1,21 @@
+.grid-container {
+  text-align: center;
+}
+
+.data-grid {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.data-grid td,
+.data-grid th {
+  border: 1px solid black;
+}
+
+.data-grid tr:first-child {
+  background-color: inherit;
+}
+.data-grid tr:not(:first-child):hover {
+  background-color: #ddd;
+}
