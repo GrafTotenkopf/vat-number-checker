@@ -17,7 +17,6 @@ const Datagrid = ({ gridData }) => {
   };
 
   const renderGridData = (gridData) => {
-    console.log(gridData);
     return gridData
       .slice(0)
       .reverse()

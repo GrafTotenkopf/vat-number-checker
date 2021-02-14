@@ -39,9 +39,9 @@ class Form extends React.Component {
           this.resetInputValue();
         })
         .catch((error) => {
-          console.log(error.message);
           this.toggleLoader(false);
           this.setErrorState(error.message);
+          throw error;
         });
     }
   };
