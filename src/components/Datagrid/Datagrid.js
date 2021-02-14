@@ -6,17 +6,18 @@ const Datagrid = ({ gridData }) => {
   const renderGridHeaders = () => {
     return (
       <tr>
-        <th>Country Code</th>
-        <th>VAT Number</th>
-        <th>Request Date</th>
-        <th>Valid</th>
-        <th>Name</th>
-        <th>Address</th>
+        <th style={{ width: "10%" }}>Country Code</th>
+        <th style={{ width: "10%" }}>VAT Number</th>
+        <th style={{ width: "13%" }}>Request Date</th>
+        <th style={{ width: "10%" }}>Valid?</th>
+        <th style={{ width: "22%" }}>Name</th>
+        <th style={{ width: "35%" }}>Address</th>
       </tr>
     );
   };
 
   const renderGridData = (gridData) => {
+    console.log(gridData);
     return gridData
       .slice(0)
       .reverse()
@@ -29,18 +30,16 @@ const Datagrid = ({ gridData }) => {
           RequestDate,
           Address,
         } = row;
-        if (index === 0) {
-          return (
-            <tr key={index + 1}>
-              <td>{CountryCode}</td>
-              <td>{VATNumber}</td>
-              <td>{RequestDate}</td>
-              <td>{Valid ? "Valid" : "Not valid"}</td>
-              <td>{Name}</td>
-              <td>{Address}</td>
-            </tr>
-          );
-        }
+        return (
+          <tr key={index + 1}>
+            <td>{CountryCode}</td>
+            <td>{VATNumber}</td>
+            <td>{RequestDate}</td>
+            <td>{Valid ? "Valid" : "Not valid"}</td>
+            <td>{Name}</td>
+            <td>{Address}</td>
+          </tr>
+        );
       });
   };
 
