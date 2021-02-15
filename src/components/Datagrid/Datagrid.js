@@ -30,7 +30,7 @@ const Datagrid = ({ gridData }) => {
           Address,
         } = row;
         return (
-          <tr key={index + 1}>
+          <tr key={index}>
             <td>{CountryCode}</td>
             <td>{VATNumber}</td>
             <td>{RequestDate}</td>

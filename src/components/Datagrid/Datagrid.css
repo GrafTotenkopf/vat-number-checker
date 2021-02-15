@@ -13,9 +13,6 @@
   border: 1px solid black;
 }
 
-.data-grid tr:first-child {
-  background-color: inherit;
-}
-.data-grid tr:not(:first-child):hover {
+.data-grid tbody tr:hover {
   background-color: #ddd;
 }
