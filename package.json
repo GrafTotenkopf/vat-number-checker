@@ -1,7 +1,7 @@
 {
   "name": "erply-coding-challenge",
   "version": "1.0.0",
-  "description": "React starter boilerplate with Hot Module Replacement, React 16 and Webpack 4",
+  "description": "Simple VAT number checker. Created for a coding challenge.",
   "main": "index.js",
   "author": "Mihkel Häkkinen <mihkel.hakkinen@gmail.com>",
   "scripts": {
